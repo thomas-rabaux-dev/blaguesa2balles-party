@@ -1,73 +1,200 @@
-<HTML>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site perso de Simon Rabaux - Blagues à 2 balles</title>
+    <meta name="description" content="Site de blagues de Simon Rabaux">
+    <meta name="keywords" content="blagues a la con, blague a la con, blagues a deux balles, blague a deux balles, blague a 2 balles, Simon, Rabaux, Simon Rabaux, le site de Simon Rabaux, blagues perso, blague perso, blagues super nulles, blague super nulle, blagues pas droles, blague pas drole">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #ffffff url('Content/fond.gif');
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 800px;
+            max-width: 100%;
+            background: white;
+        }
+        
+        /* Header section */
+        .header {
+            display: flex;
+        }
+        
+        .header img {
+            display: block;
+        }
+        
+        /* Subheader */
+        .subheader {
+            display: flex;
+        }
+        
+        /* Main content area */
+        .main-content {
+            display: flex;
+        }
+        
+        .sidebar-left {
+            width: 167px;
+            flex-shrink: 0;
+        }
+        
+        .center-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .sidebar-right {
+            width: 151px;
+            flex-shrink: 0;
+        }
+        
+        /* Navigation buttons */
+        .nav-row {
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-row a {
+            display: block;
+            line-height: 0;
+        }
+        
+        .nav-row img {
+            display: block;
+        }
+        
+        /* Content center */
+        .content-center {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+        }
+        
+        .footer a {
+            color: #0000ff;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Make images responsive on small screens */
+        @media (max-width: 820px) {
+            .container {
+                width: 100%;
+            }
+            
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
 
-<HEAD>
+<div class="container">
+    <!-- Header: Logo -->
+    <div class="header">
+        <img src="images/index_main_banner.png" width="293" height="146" alt="Site de Simon Rabaux">
+        <img src="images/index_name.png" width="507" height="146" alt="">
+    </div>
+    
+    <!-- Subheader -->
+    <div class="subheader">
+        <img src="images/index_divider.png" width="800" height="64" alt="">
+    </div>
+    
+    <!-- Main content area -->
+    <div class="main-content">
+        <!-- Left sidebar -->
+        <div class="sidebar-left">
+            <img src="images/index_05.gif" width="167" height="430" alt="">
+        </div>
+        
+        <!-- Center content -->
+        <div class="center-area">
+            <!-- Top navigation row -->
+            <div class="nav-row">
+                <a href="Pages/photos.html">
+                    <img src="images/index_06.gif" width="99" height="47" alt="Photos" border="0">
+                </a>
+                <img src="images/index_07.gif" width="210" height="48" alt="">
+                <a href="Pages/blagues.html">
+                    <img src="images/index_08.gif" width="173" height="47" alt="Blagues" border="0">
+                </a>
+            </div>
+            
+            <!-- Second row -->
+            <div class="nav-row">
+                <!-- <img src="images/index_10.gif" width="99" height="257" alt="">
+                <img src="images/index_11.gif" width="105" height="1" alt="">
+                <img src="images/index_12.gif" width="68" height="383" alt=""> -->
+                <img src="images/main_face.png" width="480" height="383" alt="">
+            </div>
+            
+            <!-- Center image
+            <div>
+                <img src="images/index_13.gif" width="315" height="256" alt="">
+            </div> -->
+            
+            <!-- Bottom navigation row -->
+            <div class="nav-row">
+                <a href="Pages/blaguesperso.html">
+                    <img src="images/index_blagues_perso.png" width="183" height="56" alt="Blagues perso" border="0">
+                </a>
+                <a href="Pages/contributions.html">
+                    <img src="images/index_contributions.png" width="183" height="56" alt="Contributions" border="0">
+                </a>
+                <a href="Pages/videos.html">
+                    <img src="images/index_videos.png" width="96" height="56" alt="Vidéos" border="0">
+                </a>
+            </div>
+            
+            <!-- Bottom spacer -->
+            <div>
+                <img src="images/index_divider.png" width="450" height="64" alt="">
+            </div>
+        </div>
+        
+        <!-- Right sidebar -->
+        <div class="sidebar-right">
+            <img src="images/index_09.gif" width="151" height="430" alt="">
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        Ce site rassemble des photos et des blagues prises notamment sur le site 
+        <a href="http://www.humour.com" target="_blank">www.humour.com</a>. Merci à eux.
+    </div>
+</div>
 
-<TITLE>Site perso de Simon Rabaux</TITLE>
-
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<META NAME="Subject" CONTENT="site perso de Simon Rabaux">
-<META NAME="Description" CONTENT="site de blagues de Simon Rabaux">
-<META NAME="Keywords" CONTENT="blagues a la con, blague a la con, blagues a deux balles, blague a deux balles, blague a 2 balles, Simon, Rabaux, Simon Rabaux, le site de Simon Rabaux, blagues perso, blague perso, blagues super nulles, blague super nulle, blagues pas droles, blague pas drole"
-</HEAD>
-
-<BODY BGCOLOR=#FFFFFF background="Content/fond.gif" LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
-<!-- ImageReady Slices (index.psd) -->
-<TABLE WIDTH=800 BORDER=0 CELLPADDING=0 CELLSPACING=0>
-  <!--DWLayoutTable-->
-  <TR> 
-    <TD height="146" COLSPAN=6> <IMG SRC="images/index_01.gif" WIDTH=493 HEIGHT=146 ALT=""></TD>
-    <TD COLSPAN=4> <IMG SRC="images/index_02.gif" WIDTH=307 HEIGHT=146 ALT=""></TD>
-  </TR>
-  <TR> 
-    <TD height="64" COLSPAN=8> <IMG SRC="images/index_03.gif" WIDTH=648 HEIGHT=64 ALT=""></TD>
-    <TD COLSPAN=2> <IMG SRC="images/index_04.gif" WIDTH=152 HEIGHT=64 ALT=""></TD>
-  </TR>
-  <TR> 
-    <TD width="167" ROWSPAN=5> <IMG SRC="images/index_05.gif" WIDTH=167 HEIGHT=430 ALT=""></TD>
-    <TD width="99" height="47"> <a href="Pages/photos.html"><IMG SRC="images/index_06.gif" ALT="" WIDTH=99 HEIGHT=47 border="0"></a></TD>
-    <TD COLSPAN=2 ROWSPAN=2> <IMG SRC="images/index_07.gif" WIDTH=210 HEIGHT=48 ALT=""></TD>
-    <TD COLSPAN=5> <a href="Pages/blagues.html"><IMG SRC="images/index_08.gif" ALT="" WIDTH=173 HEIGHT=47 border="0"></a></TD>
-    <TD width="151" ROWSPAN=5> <IMG SRC="images/index_09.gif" WIDTH=151 HEIGHT=430 ALT=""></TD>
-  </TR>
-  <TR> 
-    <TD ROWSPAN=2> <IMG SRC="images/index_10.gif" WIDTH=99 HEIGHT=257 ALT=""></TD>
-    <TD height="1" COLSPAN=3> <IMG SRC="images/index_11.gif" WIDTH=105 HEIGHT=1 ALT=""></TD>
-    <TD COLSPAN=2 ROWSPAN=4> <IMG SRC="images/index_12.gif" WIDTH=68 HEIGHT=383 ALT=""></TD>
-  </TR>
-  <TR> 
-    <TD height="256" COLSPAN=5> <IMG SRC="images/index_13.gif" WIDTH=315 HEIGHT=256 ALT=""></TD>
-  </TR>
-  <TR> 
-    <TD height="56" COLSPAN=2> <a href="Pages/blaguesperso.html"><IMG SRC="images/index_14.gif" ALT="" WIDTH=183 HEIGHT=56 border="0"></a></TD>
-    <TD COLSPAN=2> <IMG SRC="images/index_15.gif" WIDTH=135 HEIGHT=56 ALT=""></TD>
-    <TD COLSPAN=2> <a href="Pages/videos.html"><IMG SRC="images/index_16.gif" ALT="" WIDTH=96 HEIGHT=56 border="0"></a></TD>
-  </TR>
-  <TR> 
-    <TD height="70" COLSPAN=6> <IMG SRC="images/index_17.gif" WIDTH=414 HEIGHT=70 ALT=""></TD>
-  </TR>
-  <TR> 
-    <TD height="1"> <IMG SRC="images/spacer.gif" WIDTH=167 HEIGHT=1 ALT=""></TD>
-    <TD> <IMG SRC="images/spacer.gif" WIDTH=99 HEIGHT=1 ALT=""></TD>
-    <TD width="84"> <IMG SRC="images/spacer.gif" WIDTH=84 HEIGHT=1 ALT=""></TD>
-    <TD width="126"> <IMG SRC="images/spacer.gif" WIDTH=126 HEIGHT=1 ALT=""></TD>
-    <TD width="9"> <IMG SRC="images/spacer.gif" WIDTH=9 HEIGHT=1 ALT=""></TD>
-    <TD width="8"> <IMG SRC="images/spacer.gif" WIDTH=8 HEIGHT=1 ALT=""></TD>
-    <TD width="88"> <IMG SRC="images/spacer.gif" WIDTH=88 HEIGHT=1 ALT=""></TD>
-    <TD width="67"> <IMG SRC="images/spacer.gif" WIDTH=67 HEIGHT=1 ALT=""></TD>
-    <TD width="1"> <IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=1 ALT=""></TD>
-    <TD> <IMG SRC="images/spacer.gif" WIDTH=151 HEIGHT=1 ALT=""></TD>
-  </TR>
-  <tr> 
-    <td height="31" colspan="10" valign="top"><div align="center"><font size="-1" face="Verdana, Arial, Helvetica, sans-serif">Ce 
-        site rassemble des photos et des blagues prises notamment sur le site 
-        <a href="http://www.humour.com" target="_blank">www.humour.com</a>. Merci 
-        &agrave; eux.</font></div></td>
-  </tr>
-</TABLE>
-
-<!-- End ImageReady Slices -->
-
-</BODY>
+</body>
+</html>
 
 </HTML>
